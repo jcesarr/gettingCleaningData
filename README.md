@@ -16,3 +16,14 @@ In order to run the script and produce a tiny data set:
 
 The produced data set contains the mean value of the columns that correspond to the mean and standard deviation per activity per user.
 
+The run_analysis.R script reads the data for the corresponding train and test data sets and combine them together.
+It also replaces the ids of the given activities with the corresponding names.
+It also combines the subject ids to the data set.
+
+The script also selects only those columns that correspond to mean and standard deviation.
+
+In order to create a tidy data set, the script applies the Split-Apply-Combine pattern to the data set.
+
+The script splits the data by activity per user, calculates the mean for each group and then combines the groups to create the tidy data set.
+
+At the end the script creates a text file called "tidy_data.txt"
